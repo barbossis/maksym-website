@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-image: url("images/background.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: #080b14;
+            color: white;
+            font-family: Arial;
+        }
+
+        .layout {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+        }
+
+        /* КНОПКИ */
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        button {
+    width: 290px;
+    padding: 25px;
+    font-size: 25px;
+    border: none;
+    border-radius: 70px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+        .profile {
+            background: #008cff;
+            box-shadow: 0 0 10px #008cff;
+        }
+
+        .youtube {
+            background: red;
+            box-shadow: 0 0 10px red;
+        }
+
+        .contacts {
+            background: green;
+            box-shadow: 0 0 10px green;
+        }
+
+        button:hover {
+            transform: scale(1.08);
+        }
+
+    
+
+        card {
+    background: #171b29;
+    padding: 50px;
+    width: 400px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 0 50px #008cff55;
+}
+
+        .card h1 {
+            color: #ccd0e7;
+            font-size: 40px;
+        }
+
+        .card p {
+            font-size: 25px;
+        }
+
+        .avatar {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #008cff;
+    box-shadow: 0 0 25px #008cff;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <!-- КНОПКИ СЛЕВА -->
+
+        <div class="buttons">
+
+            <button class="profile"
+            onclick="window.open('https://www.tiktok.com/@maksambus?lang=ru-RU')">
+                TikTok
+            </button>
+
+            <button class="youtube"
+            onclick="window.open('https://youtu.be/dQw4w9WgXcQ?si=-46KMz6za4oTh15h', '_blank')">
+                YouTube
+            </button>
+
+            <button class="contacts"
+                onclick="window.open('https://www.roblox.com/home', '_blank')">
+                Roblox
+            </button>
+
+        </div>
+
+        <!-- ПРОФИЛЬ СПРАВА -->
+
+        <div class="card">
+
+            <img src="images/avatar.jpg" class="avatar">
+
+            <h1>Профиль</h1>
+
+            <p>Привет!</p>
+
+            <p>Я Максим мне 15 лет</p>
+
+            <p>Я люблю играть в fortnite</p>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
